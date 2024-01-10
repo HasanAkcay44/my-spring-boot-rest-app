@@ -42,7 +42,6 @@ Um die JAR Datei zu starten gebe in das Terminal `java -jar target/my-spring-boo
         return new ResponseEntity<Todo>(newTodo, HttpStatus.OK);
     }
 ```
-![PostMapping-Body](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/0c3089ef-0158-411c-8071-5299076aea23)
 
-
+![PostMapping-Body](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/f863c040-0054-4e24-be06-f4999cb4b87d)
 
