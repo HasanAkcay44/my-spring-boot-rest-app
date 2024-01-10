@@ -45,3 +45,27 @@ Um die JAR Datei zu starten gebe in das Terminal `java -jar target/my-spring-boo
 
 ![PostMapping-Body](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/f863c040-0054-4e24-be06-f4999cb4b87d)
 
+### lokale mysql Server & Dependencies
+1. Installiere [MySQL & Workbench](https://dev.mysql.com/downloads/installer/)
+2. Erstelle in MySQL Workbench die Datenbank `todoapp`
+3. Gehe auf [start.spring](https://start.spring.io/) wähle Project `Maven` aus und füge bei Dependencies `Spring Web`, `Spring Data JPA` und `MySQL Driver` ein.
+4. Klicke auf EXPLORE und gehe in `pom.xml` und kopiere die nötigen dependencys in dein Projekt rein.
+
+### GET-Request Resolutat aus MySQL
+```java
+  @GetMapping("/todo")
+    public ResponseEntity<Todo> get(@RequestParam(value = "id") int id){
+        // get todo from db by id
+        Optional<Todo> todoInDb = todoRepository.findById(id);
+
+        if(todoInDb.isPresent()){
+            return new ResponseEntity<Todo>(todoInDb.get(), HttpStatus.OK);
+        }
+
+        return new ResponseEntity("No todo found with id " + id, HttpStatus.NOT_FOUND);
+    }
+```
+![GetId1](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/13d554c9-8cae-4717-9702-7640fbefca82)
+
+
+  
