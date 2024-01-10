@@ -20,3 +20,16 @@ Mit der Postman Anwendung können einfache http API anfragen an den lokal laufen
 ### JAR Datei erstellen und ausführen
 In Terminal `./mvnw clean package` eingeben. Die JAR Datei landet im Porjekt Ordner im Verzeichnis `target`.
 Um die JAR Datei zu starten gebe in das Terminal `java -jar target/my-spring-boot-rest-app-0.0.1-SNAPSHOT.jar`, dabei startet startet der Tomcat Server und es können http Anfragen an den Server versendet werden.
+
+### http request mit Parameter
+`localhost:8080/greet?name=Max`
+- `name` ist in diesem Fall der Key
+-  `Max` ist der Wert(value)
+
+-  Code Beispiel:
+```java
+ @GetMapping("/greet")
+    public String hello(@RequestParam(value = "name") String name){
+        return "Hello World " + name;
+    }
+```
