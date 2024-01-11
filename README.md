@@ -78,3 +78,8 @@ Um die JAR Datei zu starten gebe in das Terminal `java -jar target/my-spring-boo
 ### Benutzerdaten validieren
 ![validateUser](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/eb1eeb7f-28a9-4715-bf5e-15f7589191a7)
 
+### Todos nur für bestimmten User ausgeben
+
+![getalltodosforuserId](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/bb204921-afe6-4b69-820d-e1d27691870d)
+
+
