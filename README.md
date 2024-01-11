@@ -69,6 +69,8 @@ Um die JAR Datei zu starten gebe in das Terminal `java -jar target/my-spring-boo
 
 ### User speichern
 
-![PostUser](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/b1f5a439-7d28-453e-a83d-698f9bad476a)
+![CreateUserwithouttodos](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/b7b9bfd3-bcc0-4294-b9b3-a524ac76c54a)
 
-  
+### Todos von User
+
+![getUsertodos](https://github.com/HasanAkcay44/my-spring-boot-rest-app/assets/122037183/16083e41-19ba-4992-9b7d-f62a0c4f5021)
