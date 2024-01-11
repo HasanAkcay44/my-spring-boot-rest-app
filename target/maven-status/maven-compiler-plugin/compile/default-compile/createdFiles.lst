@@ -1,0 +1,7 @@
+com\example\myspringbootrestapp\User.class
+com\example\myspringbootrestapp\UserRepository.class
+com\example\myspringbootrestapp\Todo.class
+com\example\myspringbootrestapp\TodoRepository.class
+com\example\myspringbootrestapp\MySpringBootRestAppApplication.class
+com\example\myspringbootrestapp\TodoController.class
+com\example\myspringbootrestapp\UserController.class
